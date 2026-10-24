@@ -1,6 +1,8 @@
 export type NowPlaying =
   | { status: "playing"; name: string; artist: string; image: string | null; url: string }
-  | { status: "idle" };
+  | { status: "idle" }
+  /** No API key configured — the widget hides itself. */
+  | { status: "disabled" };
 
 type LastfmImage = { size: string; "#text": string };
 type LastfmTrack = {

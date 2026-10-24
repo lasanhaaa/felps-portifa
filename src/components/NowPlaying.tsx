@@ -7,7 +7,7 @@ import styles from "./NowPlaying.module.css";
 
 const REFRESH_MS = 30_000;
 
-type State = { kind: "loading" } | { kind: "error" } | { kind: "disabled" } | { kind: "ready"; data: NowPlayingData };
+type State = { kind: "loading" } | { kind: "error" } | { kind: "ready"; data: NowPlayingData };
 
 /** "Listening now" widget fed by Last.fm (port of the Framer code component). */
 export function NowPlaying({ className }: { className?: string }) {
@@ -20,13 +20,11 @@ export function NowPlaying({ className }: { className?: string }) {
     const load = async () => {
       try {
         const res = await fetch("/api/now-playing", { cache: "no-store" });
-        if (res.status === 503) {
-          if (active) setState({ kind: "disabled" });
-          return;
-        }
         if (!res.ok) throw new Error(String(res.status));
         const data = (await res.json()) as NowPlayingData;
-        if (active) setState({ kind: "ready", data });
+        if (!active) return;
+        setState({ kind: "ready", data });
+        if (data.status === "disabled") return;
       } catch {
         if (active) setState({ kind: "error" });
       }
@@ -40,7 +38,7 @@ export function NowPlaying({ className }: { className?: string }) {
     };
   }, []);
 
-  if (state.kind === "disabled") return null;
+  if (state.kind === "ready" && state.data.status === "disabled") return null;
 
   return (
     <div className={`${styles.widget} ${className ?? ""}`} aria-live="polite">

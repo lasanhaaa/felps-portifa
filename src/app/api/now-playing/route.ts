@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import { getNowPlaying } from "@/lib/lastfm";
+import { getNowPlaying, type NowPlaying } from "@/lib/lastfm";
 
 export async function GET() {
   const apiKey = process.env.LASTFM_API_KEY;
   const username = process.env.LASTFM_USERNAME || "lasanhaaa";
 
   if (!apiKey) {
-    return NextResponse.json({ error: "LASTFM_API_KEY is not configured" }, { status: 503 });
+    return NextResponse.json<NowPlaying>({ status: "disabled" });
   }
 
   try {

@@ -339,6 +339,7 @@
 
   .socials {
     flex-direction: row;
+    justify-content: flex-start;
     padding: 44px 0;
   }
 
