@@ -54,7 +54,7 @@ export function Hero() {
 
         <div className={styles.portrait}>
           <Image
-            src="/images/portrait.png"
+            src="/images/portrait.jpg"
             alt="Portrait of Felipe Terra"
             fill
             priority
