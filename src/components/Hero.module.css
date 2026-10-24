@@ -170,6 +170,18 @@
   height: 25px;
 }
 
+/* Framer hover variant: swaps to Geist Mono and settles in from the left. */
+.services li:hover {
+  font-family: var(--font-mono);
+  animation: service-nudge 0.5s var(--ease-appear);
+}
+
+@keyframes service-nudge {
+  from {
+    transform: translateX(-10px);
+  }
+}
+
 /* --- Portrait --- */
 
 .portrait {
@@ -280,5 +292,41 @@
     width: 100%;
     height: auto;
     aspect-ratio: 355 / 466;
+  }
+}
+
+/* --- Entrance (Framer "appear" on load) --- */
+
+.enterLeft,
+.enterUp,
+.enterRight {
+  animation: hero-enter 0.8s var(--ease-appear) backwards;
+}
+
+.enterLeft {
+  --enter-from: translateX(-30px);
+}
+
+.enterUp {
+  --enter-from: translateY(30px);
+}
+
+.enterRight {
+  --enter-from: translateX(30px);
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: var(--enter-from);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enterLeft,
+  .enterUp,
+  .enterRight,
+  .services li:hover {
+    animation: none;
   }
 }

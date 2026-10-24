@@ -11,7 +11,7 @@ export function Hero() {
     <section className={styles.wrapper} aria-label="Intro">
       <div className={styles.hero}>
         <div className={styles.text}>
-          <h1 className={styles.headline}>
+          <h1 className={`${styles.headline} ${styles.enterLeft}`}>
             Hi, I&apos;m <span className={styles.serif}>Felps</span>,<br />
             a Web
             <LottieIcon src="/lottie/dawn.lottie" className={`${styles.icon} ${styles.iconDawn}`} /> &amp; Branding
@@ -19,7 +19,7 @@ export function Hero() {
             <LottieIcon src="/lottie/explosion.lottie" className={`${styles.icon} ${styles.iconExplosion}`} />
           </h1>
 
-          <div className={styles.meta}>
+          <div className={`${styles.meta} ${styles.enterUp}`}>
             <div className={styles.details}>
               <div className={styles.group}>
                 <span className={styles.label}>Social:</span>
@@ -52,7 +52,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className={styles.portrait}>
+        <div className={`${styles.portrait} ${styles.enterRight}`}>
           <Image
             src="/images/portrait.jpg"
             alt="Portrait of Felipe Terra"

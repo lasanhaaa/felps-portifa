@@ -1,9 +1,9 @@
 .reveal {
   opacity: 0;
-  transform: scale(0.9);
+  transform: var(--reveal-from, scale(0.9));
   transition:
-    opacity 0.8s var(--ease-out),
-    transform 0.8s var(--ease-out);
+    opacity 0.8s var(--ease-appear),
+    transform 0.8s var(--ease-appear);
 }
 
 .reveal[data-visible="true"] {
