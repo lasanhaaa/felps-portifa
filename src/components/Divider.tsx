@@ -1,0 +1,9 @@
+import styles from "./Divider.module.css";
+
+export function Divider() {
+  return (
+    <div className={styles.divider} aria-hidden="true">
+      <span className={styles.line} />
+    </div>
+  );
+}

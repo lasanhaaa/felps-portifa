@@ -1,0 +1,32 @@
+.outer {
+  position: relative;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 64px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  width: max-content;
+  padding: 0 54px;
+  will-change: transform;
+}
+
+@media (min-width: 1920px) {
+  .sticky {
+    top: 124px;
+  }
+
+  .track {
+    align-items: center;
+    gap: 28px;
+    padding: 0 58px;
+  }
+}

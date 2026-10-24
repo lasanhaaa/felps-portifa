@@ -1,0 +1,30 @@
+{
+  "source": "Exported from the original Framer site (felps.me). Run `npm run assets` to (re)download.",
+  "assets": {
+    "public/images/portrait.png": "https://framerusercontent.com/images/ZRiwWni2Rj72UOZmUkHGDOzLO5c.png",
+
+    "public/images/work/greenlife-xl.png": "https://framerusercontent.com/images/bbmu6D0WEMmvr5SkWoHSZ5XfBu8.png",
+    "public/images/work/yunilabs-xl.png": "https://framerusercontent.com/images/kb7EaAVZTv1etb7ydEE1EYRhQ0.png",
+    "public/images/work/fleetery-xl.png": "https://framerusercontent.com/images/aNHSVgTgPANz0pgYiomaPSP9tPE.png",
+    "public/images/work/total-return-xl.png": "https://framerusercontent.com/images/1CwqUdJn3MwUO8Q6en2JP5BF2oc.png",
+
+    "public/images/work/greenlife.png": "https://framerusercontent.com/images/p9se9yE96tHLWNyU2DXqS5j7d8.png",
+    "public/images/work/yunilabs.png": "https://framerusercontent.com/images/RAZYEVNXqJep9oIckzkt6hXN8.png",
+    "public/images/work/fleetery.png": "https://framerusercontent.com/images/NajcmlUJzWI4KkulPJRHFrE5s.png",
+    "public/images/work/total-return.png": "https://framerusercontent.com/images/LZUOQ8PkdYNBbt6yuStkIjj5qc.png",
+
+    "public/images/work/greenlife-mobile.png": "https://framerusercontent.com/images/YkjnNnWx7zpQfgeZYsEuEjTdwnM.png",
+    "public/images/work/yunilabs-mobile.png": "https://framerusercontent.com/images/V0MMuIBwjqKmlVG2xTNAuspfY.png",
+    "public/images/work/fleetery-mobile.png": "https://framerusercontent.com/images/SPXyKIYCHfYqgfWqx4aZ4DQaxU.png",
+    "public/images/work/total-return-mobile.png": "https://framerusercontent.com/images/vSxOCInF38Sat3XE15ew972HhI.png",
+
+    "public/favicon-light.png": "https://framerusercontent.com/images/i9N2kvKGQ2N2c7DnmJFxw8Hul4.png",
+    "public/favicon-dark.png": "https://framerusercontent.com/images/P3EExGfS1FhABnUpTeSBB29v2IY.png",
+
+    "public/lottie/dawn.lottie": "https://framerusercontent.com/assets/pvzxewFM4a1ExlWJot6KXVdC5E.lottie",
+    "public/lottie/explosion.lottie": "https://framerusercontent.com/assets/c80FHCKQiv17mAbdVhRG524Cbc.lottie",
+
+    "public/fonts/awesome-serif-italic-light.woff2": "https://framerusercontent.com/assets/JLndEnqmf2XhOXJTmt3AdNtDgw.woff2",
+    "public/fonts/awesome-serif-italic-extra-tall.woff2": "https://framerusercontent.com/assets/Fs5dDJNZDaW3LjbnsETlHAQkFB0.woff2"
+  }
+}

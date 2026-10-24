@@ -1,0 +1,14 @@
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+/* `display: contents` keeps <main> semantic without creating a new sticky boundary:
+   the marquee has to stay pinned until the footer has scrolled over it. */
+.main {
+  display: contents;
+}

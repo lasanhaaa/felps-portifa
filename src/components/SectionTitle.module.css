@@ -1,0 +1,25 @@
+.title {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+}
+
+.index {
+  opacity: 0.3;
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .title {
+    font-size: 16px;
+  }
+}

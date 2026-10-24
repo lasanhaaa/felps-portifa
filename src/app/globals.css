@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Awesome Serif Italic";
+  src: url("/fonts/awesome-serif-italic-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Awesome Serif Italic Extra Tall";
+  src: url("/fonts/awesome-serif-italic-extra-tall.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+ * Breakpoints (same as the original Framer project):
+ *   xl      ≥ 1920px
+ *   base    1440px – 1919px   (no media query)
+ *   lg      1200px – 1439px
+ *   mobile  < 1200px
+ */
+:root {
+  --black: #000;
+  --white: #fff;
+  --font-sans: var(--font-geist-sans), "Geist", system-ui, sans-serif;
+  --font-serif: "Awesome Serif Italic", "Times New Roman", serif;
+  --font-serif-tall: "Awesome Serif Italic Extra Tall", "Times New Roman", serif;
+  /* Aeonik is referenced by the Framer project but never loaded there, so browsers
+     fall back to the system sans. Drop the licensed files into public/fonts to use it. */
+  --font-display: "Aeonik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --tracking-tight: -0.06em;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

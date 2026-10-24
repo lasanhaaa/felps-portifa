@@ -1,0 +1,103 @@
+.marquee {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 200px 0;
+  overflow: clip;
+  background: var(--white);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 25.4187px;
+  padding-right: 25.4187px;
+  animation: scroll-left var(--duration, 40s) linear infinite;
+  will-change: transform;
+}
+
+.list[data-direction="right"] {
+  animation-name: scroll-right;
+}
+
+.list li {
+  flex: none;
+  line-height: 0.9;
+  white-space: pre;
+}
+
+.sans,
+.star {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+}
+
+.serif {
+  font-family: var(--font-serif-tall);
+  font-size: 84px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.brazil .star {
+  font-size: 103.63px;
+}
+
+.brazil .sans {
+  font-size: 90.78px;
+}
+
+.since .star,
+.since .sans {
+  font-size: 93px;
+}
+
+.since .serif {
+  letter-spacing: -0.04em;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .marquee {
+    position: relative;
+    padding: 90px 0;
+  }
+
+  .row .star,
+  .row .sans,
+  .row .serif {
+    font-size: 44px;
+  }
+}

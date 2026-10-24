@@ -1,0 +1,51 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.artwork {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.artist {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.status {
+  font-size: 10px;
+  opacity: 0.8;
+}
