@@ -1,8 +1,6 @@
 {
   "source": "Exported from the original Framer site (felps.me). Run `npm run assets` to (re)download.",
   "assets": {
-    "public/images/portrait.png": "https://framerusercontent.com/images/ZRiwWni2Rj72UOZmUkHGDOzLO5c.png",
-
     "public/images/work/greenlife-xl.png": "https://framerusercontent.com/images/bbmu6D0WEMmvr5SkWoHSZ5XfBu8.png",
     "public/images/work/yunilabs-xl.png": "https://framerusercontent.com/images/kb7EaAVZTv1etb7ydEE1EYRhQ0.png",
     "public/images/work/fleetery-xl.png": "https://framerusercontent.com/images/aNHSVgTgPANz0pgYiomaPSP9tPE.png",
