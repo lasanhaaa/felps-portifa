@@ -9,14 +9,14 @@ import styles from "./RecentWork.module.css";
 export function RecentWork() {
   return (
     <section className={styles.section} aria-labelledby="recent-work">
-      <Reveal className={styles.titleWrap}>
+      <Reveal className={styles.titleWrap} from="translateY(30px) scale(0.9)">
         <SectionTitle id="recent-work" index="01">
           Recent work
         </SectionTitle>
       </Reveal>
 
       {/* ≥ 1200px: horizontal, scroll-driven gallery */}
-      <Reveal className={styles.desktop}>
+      <Reveal className={styles.desktop} from="translateY(10px) scale(0.95)">
         <HorizontalScroll>
           {projects.map((project) => (
             <a

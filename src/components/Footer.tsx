@@ -67,7 +67,7 @@ export function Footer() {
         <span className={styles.madeIn}>{site.madeIn}</span>
       </div>
 
-      <Reveal className={styles.wordmarkWrap}>
+      <Reveal className={styles.wordmarkWrap} from="translateY(70px) scale(0.9)">
         <Wordmark className={styles.wordmark} />
       </Reveal>
     </footer>
