@@ -1,0 +1,34 @@
+name: Sync Framer assets
+
+# Downloads the images, fonts and Lottie files listed in scripts/assets.json
+# and commits them, so the site no longer depends on the Framer CDN.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/assets.json
+      - scripts/fetch-assets.mjs
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/fetch-assets.mjs
+      - name: Commit downloaded assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public
+          if git diff --cached --quiet; then
+            echo "Assets already up to date"
+          else
+            git commit -m "chore: sync assets from Framer CDN"
+            git push
+          fi
