@@ -4,17 +4,17 @@
   justify-content: center;
   width: 100%;
   height: 85vh;
-  padding: 0 48px;
-  --headline-size: 91px;
-  --icon-dawn: 70px;
-  --icon-explosion: 65px;
-  --meta-size: 16px;
+  padding: 0 calc(48 * var(--px));
+  --headline-size: calc(91 * var(--px));
+  --icon-dawn: calc(70 * var(--px));
+  --icon-explosion: calc(65 * var(--px));
+  --meta-size: calc(16 * var(--px));
 }
 
 .hero {
   display: flex;
   align-items: stretch;
-  gap: 32px;
+  gap: calc(32 * var(--px));
   width: 100%;
   height: 100%;
 }
@@ -71,21 +71,21 @@
 .meta {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
-  height: 106px;
+  gap: calc(10 * var(--px));
+  height: calc(106 * var(--px));
 }
 
 .details {
   display: flex;
   flex: 1;
   align-items: center;
-  gap: 23px;
+  gap: calc(23 * var(--px));
 }
 
 .group {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  gap: calc(30 * var(--px));
   font-size: var(--meta-size);
   font-weight: 500;
   line-height: 1.2;
@@ -93,7 +93,7 @@
 }
 
 .location {
-  gap: 13px;
+  gap: calc(13 * var(--px));
 }
 
 .label {
@@ -108,22 +108,22 @@
 .socials {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: calc(12 * var(--px));
 }
 
 .social {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
+  gap: calc(10 * var(--px));
+  font-size: calc(16 * var(--px));
   line-height: 1;
   letter-spacing: var(--tracking-tight);
   text-transform: uppercase;
 }
 
 .socialArrow {
-  width: 10px;
-  height: 10px;
+  width: calc(10 * var(--px));
+  height: calc(10 * var(--px));
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -137,7 +137,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: calc(8 * var(--px));
 }
 
 .value {
@@ -145,7 +145,7 @@
 }
 
 .clock {
-  font-size: max(var(--meta-size), 16px);
+  font-size: max(var(--meta-size), calc(16 * var(--px)));
   line-height: normal;
   letter-spacing: normal;
 }
@@ -156,7 +156,7 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 2px;
-  width: 176px;
+  width: calc(176 * var(--px));
   padding-right: 2px;
   font-size: var(--meta-size);
   font-weight: 500;
@@ -167,7 +167,7 @@
 }
 
 .services li {
-  height: 25px;
+  height: calc(25 * var(--px));
 }
 
 /* Framer hover variant: swaps to Geist Mono and settles in from the left. */
@@ -198,8 +198,8 @@
 
 .nowPlaying {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: calc(20 * var(--px));
+  bottom: calc(20 * var(--px));
 }
 
 /* --- Breakpoints --- */
@@ -207,32 +207,32 @@
 @media (min-width: 1920px) {
   .wrapper {
     height: 85vh;
-    padding: 0 81px;
-    --headline-size: 114px;
-    --icon-dawn: 90px;
-    --icon-explosion: 97px;
-    --meta-size: 18px;
+    padding: 0 calc(81 * var(--px));
+    --headline-size: calc(114 * var(--px));
+    --icon-dawn: calc(90 * var(--px));
+    --icon-explosion: calc(97 * var(--px));
+    --meta-size: calc(18 * var(--px));
   }
 
   .hero {
-    height: 800px;
+    height: min(calc(800 * var(--px)), 100%);
   }
 
   .details {
-    gap: 45px;
+    gap: calc(45 * var(--px));
   }
 
   .socials {
-    gap: 16px;
+    gap: calc(16 * var(--px));
   }
 
   .services li {
-    height: 25px;
+    height: calc(25 * var(--px));
   }
 
   .nowPlaying {
-    right: 36px;
-    bottom: 34px;
+    right: calc(36 * var(--px));
+    bottom: calc(34 * var(--px));
   }
 }
 
@@ -308,11 +308,11 @@
 }
 
 .enterUp {
-  --enter-from: translateY(30px);
+  --enter-from: translateY(calc(30 * var(--px)));
 }
 
 .enterRight {
-  --enter-from: translateX(30px);
+  --enter-from: translateX(calc(30 * var(--px)));
 }
 
 @keyframes hero-enter {

@@ -32,7 +32,7 @@ export function RecentWork() {
                   project={project}
                   variant="desktop"
                   className={styles.image}
-                  sizes="(min-width: 1920px) 1200px, 1000px"
+                  sizes="(min-width: 1920px) 63vw, 1000px"
                 />
               </span>
               <span className={styles.name}>{project.name}</span>

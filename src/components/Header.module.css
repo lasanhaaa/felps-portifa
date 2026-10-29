@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  height: 80px;
-  padding: 32px 48px;
+  height: calc(80 * var(--px));
+  padding: calc(32 * var(--px)) calc(48 * var(--px));
 }
 
 .row {
@@ -11,7 +11,7 @@
 }
 
 .logo {
-  font-size: 22px;
+  font-size: calc(22 * var(--px));
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: var(--tracking-tight);
@@ -21,16 +21,16 @@
 .cta {
   display: flex;
   align-items: center;
-  gap: 14px;
-  font-size: 18px;
+  gap: calc(14 * var(--px));
+  font-size: calc(18 * var(--px));
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
 
 .arrow {
-  width: 16px;
-  height: 16px;
+  width: calc(16 * var(--px));
+  height: calc(16 * var(--px));
   transition: transform 0.4s var(--ease-out);
 }
 
@@ -40,18 +40,18 @@
 
 @media (min-width: 1920px) {
   .header {
-    height: 114px;
-    padding: 40px 80px;
+    height: calc(114 * var(--px));
+    padding: calc(40 * var(--px)) calc(80 * var(--px));
   }
 
   .logo {
     font-family: var(--font-display);
-    font-size: 28px;
+    font-size: calc(28 * var(--px));
     letter-spacing: -0.04em;
   }
 
   .cta {
-    font-size: 20px;
+    font-size: calc(20 * var(--px));
   }
 }
 

@@ -58,7 +58,7 @@ export function Hero() {
             alt="Portrait of Felipe Terra"
             fill
             priority
-            sizes="(min-width: 1920px) 533px, (min-width: 1200px) 36vw, 100vw"
+            sizes="(min-width: 1920px) 28vw, (min-width: 1200px) 36vw, 100vw"
             className={styles.photo}
           />
           <NowPlaying className={styles.nowPlaying} />

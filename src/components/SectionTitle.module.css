@@ -1,7 +1,7 @@
 .title {
   display: flex;
-  gap: 15px;
-  font-size: 18px;
+  gap: calc(15 * var(--px));
+  font-size: calc(18 * var(--px));
   font-weight: 500;
   line-height: 0.9;
   letter-spacing: var(--tracking-tight);
