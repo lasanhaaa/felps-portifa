@@ -9,12 +9,12 @@
 .pill {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 13px 12px 14px;
-  border-radius: 4px;
+  gap: calc(10 * var(--px));
+  padding: calc(10 * var(--px)) calc(13 * var(--px)) calc(12 * var(--px)) calc(14 * var(--px));
+  border-radius: calc(4 * var(--px));
   background: var(--black);
   color: var(--white);
-  font-size: 14px;
+  font-size: calc(14 * var(--px));
   font-weight: 500;
   line-height: 1;
   letter-spacing: var(--tracking-tight);
@@ -33,6 +33,6 @@
 }
 
 .arrow {
-  width: 11px;
-  height: 11px;
+  width: calc(11 * var(--px));
+  height: calc(11 * var(--px));
 }

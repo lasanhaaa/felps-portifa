@@ -3,7 +3,7 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 200px 0;
+  padding: calc(200 * var(--px)) 0;
   overflow: clip;
   background: var(--white);
 }
@@ -11,7 +11,7 @@
 .rows {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: calc(10 * var(--px));
 }
 
 .row {
@@ -23,8 +23,8 @@
   display: flex;
   flex: none;
   align-items: center;
-  gap: 25.4187px;
-  padding-right: 25.4187px;
+  gap: calc(25.4187 * var(--px));
+  padding-right: calc(25.4187 * var(--px));
   animation: scroll-left var(--duration, 40s) linear infinite;
   will-change: transform;
 }
@@ -49,22 +49,22 @@
 
 .serif {
   font-family: var(--font-serif-tall);
-  font-size: 84px;
+  font-size: calc(84 * var(--px));
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .brazil .star {
-  font-size: 103.63px;
+  font-size: calc(103.63 * var(--px));
 }
 
 .brazil .sans {
-  font-size: 90.78px;
+  font-size: calc(90.78 * var(--px));
 }
 
 .since .star,
 .since .sans {
-  font-size: 93px;
+  font-size: calc(93 * var(--px));
 }
 
 .since .serif {

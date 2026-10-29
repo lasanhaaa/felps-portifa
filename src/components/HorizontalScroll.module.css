@@ -5,7 +5,7 @@
 
 .sticky {
   position: sticky;
-  top: 64px;
+  top: calc(64 * var(--px));
   width: 100%;
   overflow: hidden;
 }
@@ -13,20 +13,20 @@
 .track {
   display: flex;
   align-items: flex-start;
-  gap: 18px;
+  gap: calc(18 * var(--px));
   width: max-content;
-  padding: 0 54px;
+  padding: 0 calc(54 * var(--px));
   will-change: transform;
 }
 
 @media (min-width: 1920px) {
   .sticky {
-    top: 124px;
+    top: calc(124 * var(--px));
   }
 
   .track {
     align-items: center;
-    gap: 28px;
-    padding: 0 58px;
+    gap: calc(28 * var(--px));
+    padding: 0 calc(58 * var(--px));
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .titleWrap {
-  padding: 0 81px 51px;
+  padding: 0 calc(81 * var(--px)) calc(51 * var(--px));
 }
 
 /* --- Desktop gallery --- */
@@ -12,7 +12,7 @@
   display: flex;
   flex: none;
   flex-direction: column;
-  gap: 19px;
+  gap: calc(19 * var(--px));
   cursor: none;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .name {
-  font-size: 14px;
+  font-size: calc(14 * var(--px));
   font-weight: 500;
   line-height: 0.9;
   letter-spacing: var(--tracking-tight);
@@ -53,13 +53,13 @@
 }
 
 .item {
-  padding: 16px;
+  padding: calc(16 * var(--px));
 }
 
 .itemLink {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: calc(10 * var(--px));
 }
 
 .itemMedia {
@@ -73,8 +73,8 @@
 .itemFooter {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
+  gap: calc(10 * var(--px));
+  font-size: calc(16 * var(--px));
   font-weight: 500;
   line-height: 0.9;
   letter-spacing: var(--tracking-tight);
@@ -92,8 +92,8 @@
 
 .itemArrow {
   flex: none;
-  width: 11px;
-  height: 11px;
+  width: calc(11 * var(--px));
+  height: calc(11 * var(--px));
 }
 
 /* --- Breakpoints --- */
