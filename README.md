@@ -25,6 +25,7 @@ npm run dev
 | --- | --- |
 | `LASTFM_API_KEY` | Chave da API do Last.fm. Sem ela o widget "Listening now" fica escondido. |
 | `LASTFM_USERNAME` | Usuário do Last.fm (padrão: `lasanhaaa`). |
+| `GOOGLE_SITE_VERIFICATION` | Opcional. Código da verificação "Tag HTML" do Google Search Console (pode colar a tag inteira). |
 
 ## Assets
 
