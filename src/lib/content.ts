@@ -1,6 +1,8 @@
 export const site = {
   name: "Felps",
-  url: "https://felps.me",
+  url: "https://www.felps.me",
+  fullName: "Felipe Terra",
+  title: "Web & Branding Designer",
   email: "hello@felps.me",
   location: "Sao Carlos, Brasil",
   timeZone: "America/Sao_Paulo",

@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
 import { RecentWork } from "@/components/RecentWork";
+import { StructuredData } from "@/components/StructuredData";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       </main>
       <Footer />
       <CursorBadge />
+      <StructuredData />
     </div>
   );
 }
